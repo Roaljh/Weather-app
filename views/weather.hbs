@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/weather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="weather-section">
+            <h1>Weather Information</h1>
+
+            <div class="dropdown-section">
+                <label for="country">Country:</label>
+                <select id="country" name="country" onchange="loadStates(this.value)">
+                    <option value="none">Select Country</option>
+
+                </select>
+
+                <label for="state">State:</label>
+                <select id="state" name="state" onchange="loadCities(this.value)">
+                    <option value="none">Select State</option>
+                </select>
+
+                <label for="city">City:</label>
+                <select id="city" name="city" onchange="fetchWeatherData()">
+                    <option value="none">Select City</option>
+                </select>
+            </div>
+
+            <div class="weather-widget">
+                <p>Location: <span id="location">-</span></p>
+                <p>Temperature: <span id="temperature">-</span>°C</p>
+                <p>Condition: <span id="condition">-</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+
+    <script src="data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-section,
+.weather-section {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.dropdown-section {
+  margin: 20px 0;
+  padding: 1rem;
+}
+
+.dropdown-section label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.dropdown-section select {
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.label .country {
+  size: 20px;
+}
